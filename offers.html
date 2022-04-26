@@ -8,6 +8,7 @@
     <title>Forest Website | Offers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="./dist/img/favicon-32x32.png" sizes="32x32" />
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="dist/hamburgers.css" rel="stylesheet">
 <link rel="stylesheet" href="./dist/css/hamburger.min.css">
@@ -48,45 +49,56 @@
 </nav>
 
 
-    <div class="wrapper">
-        <div class="container-footer">
-            <div class="box">
-                <h1 class="section-title">Price table</h1>
-
-                <table class="sub pageoffers">
-                    <thead>
-                        <tr>
-                            <th>Rodzaj pakietu</th>
-                            <th>Cena</th>
-                            <th>Ilość opcji</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Demo</td>
-                            <td>$0</td>
-                            <td>2 z 5</td>
-                        </tr>
-                        <tr>
-                            <td>Standard</td>
-                            <td>$99</td>
-                            <td>3 z 5</td>
-                        </tr>
-                        <tr>
-                            <td>Premium</td>
-                            <td>$299</td>
-                            <td>5 z 5</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <section class="suboffers section">
+        <div class="wrapper">
+            <h2 class="section-title">Oferta</h2>
+            <p class="suboffers__text">Wybierz jedną z naszych wspaniałych ofert lub skontaktuj się z  <a href="contact.html">nami</a> w celu dopasowania oferty indywidualnie</p>
+            <div class="suboffers__cards">
+                <div class="card one">
+                    <p class="title">Demo</p>
+                    <p class="value">$0</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="nonpackage"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                    <p class="nonpackage"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                    <p class="nonpackage"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                    <button class="suboffers__btn">Wybierz</button>
+                </div>
+                <div class="card two">
+                    <p class="title">Standard</p>
+                    <p class="value">$99</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="nonpackage"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                    <p class="nonpackage"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                    <button class="suboffers__btn suboffers__btn--center">Wybierz</button>
+                </div>
+                <div class="card three">
+                    <p class="title">Premium</p>
+                    <p class="value">$299</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <button class="suboffers__btn">Wybierz</button>
+                </div>
+                <div class="card four">
+                    <p class="title">Premium++*</p>
+                    <p class="value">$499</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <p class="package"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                    <button class="suboffers__btn">Wybierz</button>
+                </div>
             </div>
+            </p>
+            <p class="extra">*Pakiet premium ++ oferuje dodatkową wyprawę dopasowaną pod ciebie!</p>
         </div>
-
-    </div>
-
-
-
-
+    </section>
 
     <footer class="footer">
     <div class="wrapper">
@@ -128,7 +140,7 @@
 
         startEvent: 'DOMContentLoaded',
         offset: 200,
-        once: false,
+        once: true,
         delay: 200
 
     });
