@@ -1,0 +1,86 @@
+@media (min-width: 992px) {
+	.navbar {
+		.hamburger {
+			display: none;
+		}
+
+		&__logo {
+			width: 300px;
+		}
+
+		&__list {
+			position: relative;
+			justify-content: flex-end;
+			top: 0;
+			flex-direction: row;
+			font-size: 1.5rem;
+			height: 0;
+			padding: 0 2em;
+			transform: translateX(0);
+
+			.link {
+				text-align: center;
+				height: 77px;
+				width: 95px;
+				line-height: 77px;
+				transition: color 0.3s, background-color 0.3s;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: -20px;
+					height: 100%;
+					transform: scale(0);
+					width: 4px;
+					transition: transform 0.3s;
+					background-color: c.$green-dark;
+					content: '';
+				}
+
+				&:hover::before {
+					transform: scale(0);
+				}
+				&:hover {
+					color: c.$first-color;
+					background-color: c.$second-color;
+				}
+			}
+		}
+
+		.active {
+			color: c.$first-color;
+			background-color: c.$second-color;
+		}
+	}
+
+	.subcontact {
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 0 1em;
+		gap: 30px;
+
+		&__form {
+			padding: 2em 2em;
+			width: 400px;
+		}
+	}
+
+	.svg-box {
+		width: 800px;
+		height: 800px;
+		position: absolute;
+		top: -40%;
+		left: -30%;
+		overflow: hidden;
+		z-index: -1;
+	}
+}
+
+.header {
+	background-image: c.$shadow, url('../../dist/img/jungle-big.jpg');
+}
+
+.imgBg {
+	background-image: c.$shadow2, url('../../dist/img/girl-big.jpg');
+}
+

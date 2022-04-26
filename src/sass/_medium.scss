@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+	.aboutus {
+		&__box {
+			flex-direction: row;
+			gap: 4em;
+		}
+
+		&__textbox {
+			text-align: left;
+			height: 300px;
+			line-height: 3em;
+		}
+	}
+
+	.footer {
+		.wrapper {
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+
+		&__logo {
+			margin: 1em 4em 1em 0;
+		}
+
+		&__table {
+			margin: 2em 2em;
+		}
+	}
+
+	.svg-box {
+		overflow: hidden;
+		.svg2 {
+			position: absolute;
+			width: 75%;
+			left: 209px;
+			top: 80px;
+
+			z-index: -1;
+		}
+	}
+}
