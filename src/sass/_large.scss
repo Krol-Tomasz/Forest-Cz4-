@@ -66,11 +66,12 @@
 	}
 
 	.svg-box {
-		width: 800px;
-		height: 800px;
 		position: absolute;
 		top: -40%;
 		left: -30%;
+		display: block;
+		height: 800px;
+		width: 800px;
 		overflow: hidden;
 		z-index: -1;
 	}
