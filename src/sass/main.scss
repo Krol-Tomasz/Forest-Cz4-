@@ -11,7 +11,6 @@
 
 html,
 body {
-	height: 100%;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -65,8 +64,8 @@ table {
 .section-title {
 	text-transform: uppercase;
 	text-align: center;
-	font-size: $font-size-xl;
-	margin: 1em 0;
+	font-size: $font-size-xxl;
+	margin: 1.8em 0;
 	font-weight: 200;
 }
 
@@ -184,7 +183,6 @@ table {
 
 .header {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	position: relative;
 	top: 77px;
@@ -196,8 +194,9 @@ table {
 	z-index: -1;
 
 	&__textbox {
-		width: 80%;
+		text-align: left;
 		color: c.$first-color;
+		padding: 0.5em 3.2em;
 	}
 
 	&__title {
@@ -224,13 +223,12 @@ main {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 3em;
+		margin-bottom: 8em;
 	}
 
 	&__img {
-		padding: 0 1em;
 		width: 100%;
-		max-width: 400px;
+		max-width: 500px;
 		height: auto;
 		object-fit: cover;
 		object-position: center;
@@ -291,6 +289,7 @@ main {
 
 .offers {
 	&__text {
+		padding: 1em 0;
 		text-align: center;
 		font-size: $font-size-lg;
 	}
@@ -304,11 +303,13 @@ main {
 
 		.card {
 			margin: 4em 3em;
-			box-shadow: 0 0 5px c.$grey;
-			border-radius: 4px;
+			// box-shadow: 1px 1px 1px rgba(102, 102, 102, 0.1);
+			// box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+			box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
 			display: flex;
 			flex-direction: column;
-			width: 230px;
+			width: 250px;
 			transition: transform 0.5s;
 			.title {
 				font-size: $font-size-lg;
@@ -374,7 +375,7 @@ main {
 	&__subpage {
 		font-size: $font-size-md;
 		text-align: center;
-		padding: 0 1em;
+		padding: 2em 0;
 
 		a {
 			font-weight: bold;
@@ -611,8 +612,6 @@ main {
 	display: none;
 }
 
-
-
 .subcontact {
 	margin-top: 11em;
 	display: flex;
@@ -620,7 +619,6 @@ main {
 	justify-content: center;
 	align-items: center;
 	padding: 0 2em;
-	
 
 	&__boxform {
 		margin-bottom: 6em;
@@ -629,7 +627,6 @@ main {
 		color: c.$second-color;
 		background-color: c.$first-color;
 		box-shadow: 0 0 10px black;
-		
 
 		.title {
 			font-size: $font-size-xl;
